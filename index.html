@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0--1">
+        <li class="text">Парковка 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1--2">
+        <li class="text">Парковка 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2--3">
+        <li class="text">Парковка 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3---">
+        <li class="text">Вход на территорию</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-">
+        <li class="text">Лестница</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5--1">
+        <li class="text">Территория 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6--2">
+        <li class="text">Территория 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-3">
+        <li class="text">Территория3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8--4">
+        <li class="text">Территория 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9--5">
+        <li class="text">Территория 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10--6">
+        <li class="text">Территория 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11--7">
+        <li class="text">Территория 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12--8">
+        <li class="text">Территория 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13----">
+        <li class="text">Ко входу в отель</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14---">
+        <li class="text">Вход в отель</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15------">
+        <li class="text">Вход в хол ресторана и террасу</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16----">
+        <li class="text"> Фойе вход спа</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17--">
+        <li class="text">Лифт внутри</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18--">
+        <li class="text">Лифт закрыт</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19--">
+        <li class="text">Лифт открыт</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20--12-">
+        <li class="text">Площадка-1,2 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21--1">
+        <li class="text">Фойе 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22--2">
+        <li class="text">Фойе 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23--3---">
+        <li class="text">Фойе 3 - Лестница</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24--4---">
+        <li class="text">Фойе 4 вход в столовую</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25----">
+        <li class="text">Фойе вход в СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26--">
+        <li class="text">Фойе СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27--1">
+        <li class="text">Столовая 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28--2">
+        <li class="text">Столовая 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29--3">
+        <li class="text">Столовая 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30--4">
+        <li class="text">Столовая 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31--5">
+        <li class="text">Столовая 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-----">
+        <li class="text">Вход в холл и террасу</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33---">
+        <li class="text">Переход Тренажерный зал</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34--1">
+        <li class="text">Ресторан 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35--2">
+        <li class="text">Ресторан 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36--3">
+        <li class="text">Ресторан 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37--4">
+        <li class="text">Ресторан 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38--">
+        <li class="text">СУ ресторан</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39--">
+        <li class="text">Терраса ресторан</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40---1">
+        <li class="text">Холл ресторана 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41----">
+        <li class="text">Холл вход в спа</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42---2">
+        <li class="text">Холл ресторана 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43---">
+        <li class="text">Джуниор Сюит </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44---">
+        <li class="text">Джуниор Сюит ДМ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45---">
+        <li class="text">Джуниор Сюит Балкон</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46---">
+        <li class="text">Джуниор Сюит СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47----">
+        <li class="text">Джуниор Сюит Плюс </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48----">
+        <li class="text">Джуниор Сюит Плюс Балкон</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49----">
+        <li class="text">Джуниор Сюит Плюс ДМ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50----">
+        <li class="text">Джуниор Сюит Плюс СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51--1-5-">
+        <li class="text">Терраса 1 5 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52--2">
+        <li class="text">Люкс 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53--">
+        <li class="text">Люкс </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54----">
+        <li class="text">Люкс балкон с зала</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55----">
+        <li class="text">Люкс балкон с комнаты</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56--">
+        <li class="text">Люкс ДМ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57--">
+        <li class="text">Люкс СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58--2-5">
+        <li class="text">Терраса 2 5этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59----2-2">
+        <li class="text">Люкс премиум  ДМ2 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60---1-">
+        <li class="text">Люкс премиум 1 комната</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61---1-">
+        <li class="text">Люкс премиум 1 ДМ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62---2-">
+        <li class="text">Люкс премиум 2 комната</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63---2-">
+        <li class="text">Люкс премиум 2 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64---2--2">
+        <li class="text">Люкс премиум 2 этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65----1-">
+        <li class="text">Люкс премиум Балкон 1 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66----2-">
+        <li class="text">Люкс премиум Балкон 2 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67----1">
+        <li class="text">Люкс премиум СУ 1этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68----2">
+        <li class="text">Люкс премиум СУ 2этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-">
+        <li class="text">Стандарт</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70--">
+        <li class="text">Стандарт Балкон</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71--">
+        <li class="text">Стандарт ДМ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72--">
+        <li class="text">Стандарт СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73--">
+        <li class="text">Стандарт Мини</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74---">
+        <li class="text">Стандарт Мини Балкон</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75---">
+        <li class="text">Стандарт Мини СУ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76--">
+        <li class="text">Стандарт Плюс</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77---">
+        <li class="text">Стандарт Плюс Балкон</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78---">
+        <li class="text">Стандарт Плюс ДМ</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79----">
+        <li class="text">Стандарт Плюс СУ </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80--12-">
+        <li class="text">Площадка-1,2 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81--2-">
+        <li class="text">Фойе 2 этаж</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82--2--1">
+        <li class="text">Фойе 2 этаж 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83--2--2">
+        <li class="text">Фойе 2 этаж 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84--">
+        <li class="text">Раздевалка СПА</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85--1">
+        <li class="text">Зал 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86--3">
+        <li class="text">Зал 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87--2">
+        <li class="text">Зал 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88--4">
+        <li class="text">Зал 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89--5">
+        <li class="text">Зал 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90--6">
+        <li class="text">Зал 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91----">
+        <li class="text">Переход в тренажерный зал</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-">
+        <li class="text">Раздевалка</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93---">
+        <li class="text">СУ Тренажерный зал</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94--1">
+        <li class="text">Бассейн 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95--2">
+        <li class="text">Бассейн 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96--3">
+        <li class="text">Бассейн 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97--4">
+        <li class="text">Бассейн 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98--5">
+        <li class="text">Бассейн 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99--6">
+        <li class="text">Бассейн 6</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100--7">
+        <li class="text">Бассейн 7</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101--8">
+        <li class="text">Бассейн 8</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102--1">
+        <li class="text">Вода 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103--2">
+        <li class="text">Вода 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104--3">
+        <li class="text">Вода 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105--4">
+        <li class="text">Вода 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106---">
+        <li class="text">Вход в сауну</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107---3">
+        <li class="text">Р СПА 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108--2">
+        <li class="text">Р СПА2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109--">
+        <li class="text">Раздевалка СПА</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-">
+        <li class="text">Сауна</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
